@@ -8,6 +8,8 @@ sudo losetup --detach /dev/loop0
 echo "----->sudo rmmod pantry"
 sudo rmmod pantry
 
+echo "----->sudo losetup --find --show ../pantry_disk.img"
+sudo losetup --find --show ../pantry_disk.img
 echo "----->sudo insmod pantry.ko"
 sudo insmod pantry.ko
 echo "----->sudo mount -t pantryfs /dev/loop0 /mnt/pantry"
