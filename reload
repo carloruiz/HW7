@@ -16,5 +16,5 @@ echo "----->sudo mount -t pantryfs /dev/loop0 /mnt/pantry"
 sudo mount -t pantryfs /dev/loop0 /mnt/pantry
 
 
-echo "----->./format_disk_as_pantryfs /dev/loop0"
-./format_disk_as_pantryfs /dev/loop0
+echo "----->sudo ./format_disk_as_pantryfs /dev/loop0"
+sudo ./format_disk_as_pantryfs /dev/loop0
