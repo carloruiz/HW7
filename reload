@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+echo "----->sudo umount /mnt/pantry"
+sudo umount /mnt/pantry
+echo "----->sudo losetup --detach /dev/loop0"
+sudo losetup --detach /dev/loop0
+echo "----->sudo rmmod pantry"
+sudo rmmod pantry
+
+echo "----->sudo insmod pantry.ko"
+sudo insmod pantry.ko
+echo "----->sudo mount -t pantryfs /dev/loop0 /mnt/pantry"
+sudo mount -t pantryfs /dev/loop0 /mnt/pantry
+
+
+echo "----->./format_disk_as_pantryfs /dev/loop0"
+./format_disk_as_pantryfs /dev/loop0
